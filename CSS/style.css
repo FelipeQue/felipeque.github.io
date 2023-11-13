@@ -1,0 +1,262 @@
+:root {
+--richblack: #091620;
+--rosewood: #62130F;
+--chillired: #D94430;
+--eggshell: #EBE5D6;
+--khaki: #C5B096;
+
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: 'Nunito Sans', sans-serif;
+    font-weight: 350;
+    scroll-behavior:smooth;
+}
+
+.titulo {
+    font-size: 2em;
+    color: var(--richblack);
+    font-weight: 600;
+}
+
+.subtitulo {
+    font-size: 1.5em;
+    font-weight: 600;
+}
+
+.terceiro-titulo {
+    font-style: italic;
+    font-weight: 500;
+}
+
+#link-home {
+    font-size: 2em;
+    padding: 0.2em;
+    padding-bottom: 0.25em;
+    color: var(--richblack);
+    position: fixed;
+    z-index: 100;
+    right: 20px;
+    bottom: 20px;
+    background-color: var(--eggshell);
+    border-radius: 50%;
+    border-style: solid;
+    border-color: var(--richblack);
+    opacity: 0.75;
+
+}
+
+.header {
+    width: 100vw;
+    background-color: var(--richblack);
+    color: var(--eggshell);
+    /*height: 8vh;*/
+    height: 3em;
+    padding: 0 4em;
+    position: fixed;
+}
+
+.header a {
+    color: var(--eggshell);
+    height: 100%;
+    padding: 0.7em 1em;
+}
+
+.header a:hover {
+    color: var(--chillired);
+    border-bottom: 3px solid;
+}
+
+.header a:active {
+    color: var(--rosewood);
+    border-bottom: 3px solid;
+}
+
+.header-menu {
+    display: flex;
+    height: 100%;
+    justify-content: flex-start;
+    align-items: center;
+
+}
+
+#home {
+    width: 100vw;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 0 4em;
+    background-image: url(".././assets/images/trapezista.jpg");
+    background-size: cover;
+}
+
+#home h2 {
+    font-weight: 200;
+    font-style: italic;
+}
+
+#sobre {
+    width: 100vw;
+    min-height: 50vh;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: top;
+    padding-top: 3em;
+    padding-bottom: 3em;
+}
+
+#sobre p {
+    padding-top: 1em;
+    padding-right: 4em;
+}
+
+#sobre img {
+    height: 40vh;
+    padding-right: 3em;
+    padding-left: 3.5em;
+    left: 0;
+  }
+
+#contato {
+    width: 100vw;
+    height: 30vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 4em;
+    background-color: var(--rosewood);
+    color: var(--eggshell);
+}
+
+#contato a {
+    color: var(--eggshell);
+    display: flex;
+    align-items: center;
+}
+
+#contato a:active {
+    color: var(--chillired);
+}
+
+#contato ul {
+    list-style: none;
+    font-size: 1em;
+}
+
+#contato i {
+    padding: 10px;
+    font-size: 1.5em;
+}
+
+#formacao {
+    width: 100vw;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 4em 4em;
+}
+
+#formacao ul {
+    padding-top: 2em;
+}
+
+#experiencia {
+    /* Peguei as duas linhas abaixo do Stack Overflow. Junto com o bloco seguinte elas
+    fazem com que eu possa usar a imagem de fundo com opacidade baixa.*/
+    position: relative;
+    z-index: 1;
+
+    width: 100vw;
+    height: auto;
+
+    /* background-color: var(--khaki); */
+    /* background-image: url(".././assets/images/job.jpg"); */
+    /* background-repeat: no-repeat; */
+    /* background-size: cover; */
+    /* background-position: center; */
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 4em 4em;
+}
+
+/* Peguei o código abaixo do Stack Overflow e não sei como
+funcionam os parâmetros content e position e por que diabos a palavra "before".*/
+
+#experiencia::before {
+    content: "";
+    position: absolute;
+    top: 0; 
+    left: 0;
+    width: 100%; 
+    height: 100%;  
+    opacity: .2; 
+    z-index: -1;
+    background-size: cover;
+    background-position: center;
+    background-image: url(".././assets/images/job.jpg");
+  }
+
+#experiencia ul {
+    padding-top: 2em;
+}
+
+#habilidades {
+    width: 100vw;
+    min-height: 60vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 0 4em;
+}
+
+#habilidades ul {
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+    padding-top: 1em;
+}
+
+.skill-list {
+    display: flex;
+    flex-direction: column;
+    padding-top: 0em;
+}
+
+#footer {
+    width: 100vw;
+    background-color: var(--richblack);
+    color: var(--eggshell);
+    font-size: 0.9em;
+    display: flex;
+    padding: 1em 4em;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#footer nav {
+    display: flex;   
+}
+
+#footer i {
+    padding: .3em;
+    font-size: 1.2em;
+}
+
+#footer a {
+    color: var(--chillired);
+    padding: 0em 1em;
+    display: flex;
+    align-items: center;
+}
+
+#footer a:active {
+    color: var(--rosewood);
+}
