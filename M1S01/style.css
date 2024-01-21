@@ -1,0 +1,296 @@
+:root {
+    --generalwhite: #F8F9FA;
+    --backgroundgrey: #dee2e6;
+    --textgrey: #343A40;
+    }
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: 'Nunito Sans', sans-serif;
+    font-weight: 350;
+    scroll-behavior:smooth;
+}
+
+.section-title {
+    font-size: 1.5em;
+    font-family: "Titillium Web", sans-serif;
+    font-weight: 900;
+    font-style: normal;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    color: var(--textgrey);
+}
+
+.article-title {
+    font-size: 1.5em;
+    font-weight: 900;
+}
+
+.third-title {
+    font-style: italic;
+    font-weight: 500;
+}
+
+#link-home {
+    font-size: 1.5em;
+    padding: 0.2em;
+    padding-bottom: 0.25em;
+    color: black;
+    position: fixed;
+    z-index: 100;
+    right: 20px;
+    bottom: 20px;
+    background-color: var(--generalwhite);
+    border-radius: 50%;
+    border-style: solid;
+    border-color: black;
+    opacity: 0.35;
+}
+
+.header {
+    width: 100vw;
+    background-color: var(--backgroundgrey);
+    height: 3em;
+    padding: 0 4em;
+    position: fixed;
+}
+
+.header-menu {
+    display: flex;
+    height: 100%;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.header a {
+    color: var(--textgrey);
+    height: 100%;
+    padding: 0.7em 1em;
+}
+
+.header a:hover {
+    color: black;
+    border-bottom: 3px solid;
+    font-weight: 500;
+}
+
+.header a:active {
+    color: white;
+    border-bottom: 3px solid;
+}
+
+/* O bloco abaixo serve para que os itens deste menu não se desloquem ligeiramente ao
+ficarem bold no mouseover. São os mesmos links já em negrito, mas escondidos. E utilizam
+os titles como referência para conteúdo. */
+
+.header a::before {
+    display: block;
+    content: attr(title);
+    font-weight: 500;
+    height: 0;
+    overflow: hidden;
+    visibility: hidden;
+}
+
+/* Home */
+
+#home {
+    width: 100vw;
+    min-height: 50vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 0 4em;
+    background-color: var(--backgroundgrey);
+}
+
+#home h1 {
+    font-size: 3em;
+    color: var(--textgrey);
+    font-family: "Titillium Web", sans-serif;
+    font-weight: 900;
+    font-style: normal;
+    text-transform: uppercase;    
+}
+
+#home h2 {
+    font-size: 2em;
+    font-weight: 200;
+    font-style: italic;
+    color: var(--textgrey);
+}
+
+/* About */
+
+#about {
+    width: 100vw;
+    /* min-height: 50vh; */
+    background-color: var(--backgroundgrey);
+    display: flex;
+    justify-content: space-evenly;
+    align-items: top;
+    padding-top: 3em;
+    padding-bottom: 3em;
+}
+
+#about p {
+    padding-top: 1em;
+    padding-right: 4em;
+}
+
+#about img {
+    height: 40vh;
+    padding-right: 3em;
+    padding-left: 3.5em;
+    left: 0;
+  }
+
+/* Projects */
+
+#projects {
+    width: 100vw;
+    /* min-height: 50vh; */
+    padding: 2em 4em;
+    background-color: var(--backgroundgrey);
+    color: var(--textgrey);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+#projects article{
+    border-radius: 12px;
+    border-color: #CED4DA;
+    border-style: solid;
+    border-width: 0.5px;
+    min-height: 20vh;
+    padding: 2em 1.5em;
+    background-color: var(--generalwhite);
+}
+
+article + article {
+    margin-top: 8px;
+}
+
+/* Education */
+
+#education {
+    width: 100vw;
+    height: auto;
+    background-color: var(--backgroundgrey);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 4em 4em;
+}
+
+#education ul {
+    padding-top: 2em;
+}
+
+/* Experience */
+
+#experience {
+    width: 100vw;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 4em 4em;
+}
+
+#experience ul {
+    padding-top: 2em;
+}
+
+/* Skills */
+
+#skills {
+    width: 100vw;
+    height: auto;
+    background-color: var(--backgroundgrey);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 4em 4em;
+}
+
+#skills ul {
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+    padding-top: 1em;
+}
+
+.skill-list {
+    display: flex;
+    flex-direction: column;
+    padding-top: 0em;
+}
+
+/* Contact */
+
+#contact {
+    width: 100vw;
+    height: 30vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 4em;
+}
+
+#contact a {
+    color: var(--offwhite);
+    display: flex;
+    align-items: center;
+}
+/* 
+#contact a:active {
+    color: var(--chillired);
+} */
+
+#contact ul {
+    list-style: none;
+    font-size: 1em;
+}
+
+#contact i {
+    padding: 10px;
+    font-size: 1.5em;
+}
+
+/* Footer */
+
+#footer {
+    width: 100vw;
+    background-color: var(--backgroundgrey);
+    color: var(--textgrey);
+    font-size: 0.8em;
+    display: flex;
+    padding: 1em 4em;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#footer nav {
+    display: flex;   
+}
+
+#footer i {
+    padding: .3em;
+    font-size: 1.2em;
+}
+
+#footer a {
+    color: var(--textgrey);
+    padding: 0em 1em;
+    display: flex;
+    align-items: center;
+}
+
+#footer a:active {
+    color: white;
+}
