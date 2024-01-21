@@ -47,7 +47,8 @@
         <div><img src="./assets/images/portrait.jpg" alt="Retrato de Felipe, um homem branco de olhos azuis, barba e com cabelos longos"></div>
         <div>
             <h2 class="section-title">About</h2>
-            <p>UI and UX designer with experience in mobile apps and games. Recently I’ve been shifting my focus to programming. (I also happen to be a circus artist.)</p>
+            <p>UI and UX designer with experience in mobile apps and games. Recently I’ve been shifting my focus to programming. (I also happen to be a circus artist.)
+            </p>
         </div>
     </section>
 
@@ -56,18 +57,71 @@
 
         <article id="mother">
             <h3 title="Mother of Waters" class="article-title">Mother of Waters</h3>
-            <p>Yes, this is a real project!</p>
-            <div>
+            <p>Mother of Waters is a short interactive visual novel about a woman facing unexpected consequences of her most recent meal. The story takes place in Rio de Janeiro, Brazil, and the supernatural elements are inspired by Brazilian folkloric legends. A single playthrough takes about 20 minutes and there are 5 different endings.
+            <p>Made with <a href="https://www.renpy.org">Ren'Py.</a></p>
+            <p>Warning: this story contains a scene of sexual nature as well as (briefly) depicts graphic violence and some nudity. If you're not supposed to see those, then please don't.
+            </p>
+            <p>Story and writing by <a target="_blank" href="https://www.instagram.com/vicentefmarinho/">Vicente Marinho.</a></p>
+            <p>All artwork, programming and interface by Felipe Quérette.</p>
+            <br>
+
+           <!-- Aqui vai entrar um carrossel. Fonte: https://css-tricks.com/how-to-make-a-css-only-carousel/ -->
+          
+           <div class="wrapper">
+            <nav class="lil-nav">
+              <a href="#image-1">
+                <img class="lil-nav__img" src="./assets/images/mother01.jpeg" alt="Image of a game screen featuring a woman with her eyes closed." />
+              </a>
+              <a href="#image-2">
+                <img class="lil-nav__img" src="./assets/images/mother02.jpeg" alt="Image of a game screen featuring a dialogue." />
+              </a>
+              <a href="#image-3">
+                <img class="lil-nav__img" src="./assets/images/mother03.jpeg" alt="Image of a game screen featuring a dialogue." />
+              </a>
+              <a href="#image-4">
+                <img class="lil-nav__img" src="./assets/images/mother04.jpeg" alt="Image of a game screen featuring a dialogue." />
+              </a>
+            </nav>
+          
+            <div class="gallery">
+              <img class="gallery__img" id="image-1" src="./assets/images/mother01.jpeg" alt="Image of a game screen featuring a woman with her eyes closed." />
+              <img class="gallery__img" id="image-2" src="./assets/images/mother02.jpeg" alt="Image of a game screen featuring a dialogue." />
+              <img class="gallery__img" id="image-3" src="./assets/images/mother03.jpeg" alt="Image of a game screen featuring a dialogue." />
+              <img class="gallery__img" id="image-4" src="./assets/images/mother04.jpeg" alt="Image of a game screen featuring a dialogue." />
+              </div>
+          </div>
+
+
+           
+
+          <!-- Fim do carrossel. -->
+
+          <!-- <br>
+          <div>
               <img src="./assets/images/mother01.jpeg">
               <img src="./assets/images/mother02.jpeg">
               <img src="./assets/images/mother03.jpeg">
               <img src="./assets/images/mother04.jpeg">
-            </div>
+            </div> -->
+
+            <p>You can download it here:</p>
+            <p><a href="https://www.dropbox.com/s/hzqfj7e1xgp6gr8/MotherofWaters-0.1-win.zip?dl=0" target="_blank" class="wixui-rich-text__text">Windows</a>
+            </p>
+            <p></p><a href="https://www.dropbox.com/s/y8rmaegz6nxkbqn/MotherofWaters-0.1-mac.zip?dl=0" target="_blank" class="wixui-rich-text__text">Mac</a>
+            </p>  
+            <p><a href="https://www.dropbox.com/s/usbdtiz9yij0av7/MotherofWaters-0.1-linux.tar.bz2?dl=0" target="_blank" class="wixui-rich-text__text">Linux</a>
+            </p>
+
 
         </article>
         <article id="brasa">
             <h3 title="Brasa Game Assets" class="article-title">Brasa Game Assets</h3>
-
+            <p>(Work in progress.)</p>
+            <p>I was asked to create pixel art character sprites (inspired by the Zelda games style) to be used in a virtual tabletop RPG stream session on Twitch.</p>
+            <p>Client: <a href="https://www.twitch.tv/rpgaymers">RPGaymers</a>.</p>
+            <img src="./assets/images/ignatius-sprite-static.png">
+            <img src="./assets/images/haru-sprite.gif">
+            <img src="./assets/images/zuma-sprite.gif">
         </article>
 
     </section>
@@ -158,6 +212,9 @@
 
 <!-- Definindo caminho do arquivo de Javascript: -->
 <script src="script.js"></script>
+<script src="/path/to/flickity.pkgd.min.js"></script>
+
+
 </body>
 
 </html>

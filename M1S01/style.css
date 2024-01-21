@@ -2,7 +2,7 @@
     --generalwhite: #F8F9FA;
     --backgroundgrey: #dee2e6;
     --textgrey: #343A40;
-    }
+}
 
 * {
     margin: 0;
@@ -51,6 +51,7 @@
 }
 
 .header {
+    z-index: 90;
     width: 100vw;
     background-color: var(--backgroundgrey);
     height: 3em;
@@ -85,7 +86,6 @@
 /* O bloco abaixo serve para que os itens deste menu não se desloquem ligeiramente ao
 ficarem bold no mouseover. São os mesmos links já em negrito, mas escondidos. E utilizam
 os titles como referência para conteúdo. */
-
 .header a::before {
     display: block;
     content: attr(title);
@@ -174,6 +174,64 @@ os titles como referência para conteúdo. */
 article + article {
     margin-top: 8px;
 }
+
+#projects article a {
+    color: black;
+    font-weight: 500;
+}
+
+/* Aqui vai entrar o CSS do carrossel: */
+
+#mother img {
+    display: block;
+    max-width: 100%;
+  }
+  
+.wrapper {
+    z-index: 50;
+    overflow: hidden;
+    height: 70vh;
+    display: grid;
+    grid-template-columns: 1fr 5fr;
+    /* grid-gap: 10px; */
+}
+  
+.gallery {
+    overflow: scroll;
+    scroll-snap-type: x mandatory;
+    scroll-behavior: smooth;
+}
+  
+.gallery__img {
+    scroll-snap-align: start;
+    padding-top: 30px;
+}
+  
+.lil-nav {
+    overflow-y: scroll;
+    overflow-x: hidden;
+    padding-top: 50px;
+  
+a {
+      height: 200px;
+      display: flex;
+      margin-top: 10px;
+    }
+}
+  
+.lil-nav__img {
+    object-fit: cover;
+    filter: saturate(0);
+    transition: 0.3s ease all;
+  
+    &:hover {
+      transform: scale(1.05);
+      filter: saturate(1);
+    }
+}
+
+
+/* Fim do carrossel. */
 
 /* Education */
 
