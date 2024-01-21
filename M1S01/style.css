@@ -210,7 +210,7 @@ article + article {
 .lil-nav {
     overflow-y: scroll;
     overflow-x: hidden;
-    padding-top: 50px;
+    padding-top: 30px;
   
 a {
       height: 200px;
