@@ -182,7 +182,7 @@ article + article {
 
 /* Aqui vai entrar o CSS do carrossel: */
 
-#mother img {
+.wrapper img {
     display: block;
     max-width: 100%;
   }
