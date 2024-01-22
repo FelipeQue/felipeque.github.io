@@ -114,6 +114,7 @@ os titles como referência para conteúdo. */
     font-weight: 900;
     font-style: normal;
     text-transform: uppercase;    
+    padding-top: 1.5em;
 }
 
 #home h2 {
@@ -133,7 +134,7 @@ os titles como referência para conteúdo. */
     justify-content: space-evenly;
     align-items: top;
     padding-top: 3em;
-    padding-bottom: 3em;
+    /* padding-bottom: 1em; */
 }
 
 #about p {
@@ -153,7 +154,7 @@ os titles como referência para conteúdo. */
 #projects {
     width: 100vw;
     /* min-height: 50vh; */
-    padding: 2em 4em;
+    padding: 4em 4em;
     background-color: var(--backgroundgrey);
     color: var(--textgrey);
     display: flex;
@@ -183,7 +184,7 @@ article + article {
 /* Aqui vai entrar o CSS do carrossel: */
 
 .wrapper img {
-    display: block;
+    /* display: block; */
     max-width: 100%;
   }
   
@@ -193,7 +194,6 @@ article + article {
     height: 70vh;
     display: grid;
     grid-template-columns: 1fr 5fr;
-    /* grid-gap: 10px; */
 }
   
 .gallery {
